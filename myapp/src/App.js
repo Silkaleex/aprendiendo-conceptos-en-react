@@ -1,10 +1,16 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Componente1 from "./ejercicios/componente1";
 // import TaskListComponent from "./componentes/container/task.list";
-import EstadoComponente from "./ejercicios/task.list1";
 // import Greeting from "./componentes/pure/greeting";
 // import Greetingf from "./componentes/pure/greetingF";
 function App() {
+  const contactoPrueba = {
+    nombre: "Estudiante",
+    apellido: "Aprendiendo react",
+    email: "Este-Es-Un-Correo@outlook.es",
+    conectado: false,
+  };
   return (
     <div className="App">
       <header className="App-header">
@@ -15,10 +21,9 @@ function App() {
         {/* <Greetingf name="Silkaleex" /> */}
         {/*Componente de listado de tareas*/}
         {/* <TaskListComponent /> */}
-        <EstadoComponente />
+        <Componente1 contacto={contactoPrueba} />
       </header>
     </div>
   );
 }
-
 export default App;
